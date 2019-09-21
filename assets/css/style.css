@@ -1,0 +1,79 @@
+.container{
+    
+    align-items: center;
+    
+
+    
+
+}
+
+.row{
+
+    justify-items: flex-start;
+}
+
+#crystalCollector{
+    color: white;
+    background-color: darkorange;
+    width: 33.33%;
+    text-align: center;
+    height: 60px;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+
+}
+
+#insructions
+{
+    color: green;
+    background-color: tan;
+    width: 50%;
+    text-align: center;
+    height: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 5px;
+
+}
+
+#score{
+    color: purple;
+    background-color: green;
+    width: 28%;
+    height: 75px;
+    margin: 5px;
+
+}
+
+#winsAndLosses{
+    color: green;
+    background-color: teal;
+    width: 8%;
+    margin: 5px;
+    height: 75px;
+
+}
+
+#totalScore{
+    color: white;
+    background-color: teal;
+    margin: 5px;
+    width: 30%;
+    height: 25px;
+    padding: 10px;
+    font-size: 10px;
+    
+}
+
+#scoreDisplay{
+    color: white;
+    background-color: teal;
+    margin: 5px;
+    height: 100px;
+    width: 30%;
+
+}
+
+body{
+    background-color: brown;
+}
