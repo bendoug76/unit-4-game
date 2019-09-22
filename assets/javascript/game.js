@@ -19,7 +19,9 @@
 // 
 $(document).ready(function() {
 
-    var randomNumber = Math.floor(Math.random()*102)+19;
+    var randomNumber = Math.floor(Math.random()*102)+19;{
+        document.getElementById("score").innerHTML = randomNumber;
+    }
 
     var num1 = Math.floor(Math.random()*12)+1;
     var num2 = Math.floor(Math.random()*12)+1;
@@ -28,46 +30,58 @@ $(document).ready(function() {
         console.log(num1,num2,num3,num4)
 
     var goalNumber = randomNumber;
-    var wins = 0;
-    var losses = 0;
+    var wins = 0;{
+
+        document.getElementById("winsBox").innerHTML = "Wins: " + wins;
+    }
+    var losses = 0;{
+
+        document.getElementById("lossesBox").innerHTML = "Losses: " + losses;
+    }
     var totalScore = 0;
 
     $("#blueGem").on("click", function(){
 
-        console.log( $(this).val());
         totalScore = totalScore + num1;{
                 console.log(totalScore);
         }
         
+        document.getElementById("scoreDisplay").innerHTML = totalScore;
 
     });
 
     $("#greenGem").on("click", function(){
 
-        console.log( $(this).val());
         totalScore = totalScore + num2;{
             console.log(totalScore);
-    }
+        }
 
+        document.getElementById("scoreDisplay").innerHTML = totalScore;
+    
     });
 
     $("#redGem").on("click", function(){
 
-        console.log( $(this).val());
         totalScore = totalScore + num3;{
             console.log(totalScore);
-    }
+        }
+
+        document.getElementById("scoreDisplay").innerHTML = totalScore;
 
     });
 
     $("#orangeGem").on("click", function(){
 
-        console.log( $(this).val());
-        totalscore = totalScore + num4;{
+        totalScore = totalScore + num4;{
             console.log(totalScore);
-    }
+        }
+
+        document.getElementById("scoreDisplay").innerHTML = totalScore;
 
     });
+
+    
+
 
     
 });
