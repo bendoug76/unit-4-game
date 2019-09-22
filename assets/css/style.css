@@ -29,8 +29,8 @@
     color: green;
     background-color: tan;
     width: 50%;
-    text-align: center;
-    height: 200px;
+    text-align: left;
+    height: 325px;
     font-family: 'Times New Roman', Times, serif;
     margin: 5px;
 
@@ -38,21 +38,24 @@
 
 #score{
     color: purple;
-    background-color: green;
+    background-color: seagreen;
     width: 28%;
-    height: 75px;
+    height: 100px;
     margin: 5px;
 
 }
 
 #winsAndLosses{
     color: green;
-    background-color: teal;
-    width: 8%;
+    background-color: aqua;
+    width: 25%;
     margin: 5px;
-    height: 75px;
+    height: 100px;
+    padding: 0px;
 
 }
+
+
 
 #totalScore{
     color: white;
@@ -76,4 +79,9 @@
 
 body{
     background-image: url("/Users/benjaminlee/unit-4-game/unit-4-game/assets/images/trees.png");
+}
+
+#blueGem{
+    height:60px;
+    width: 60px;
 }
