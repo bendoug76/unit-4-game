@@ -40,13 +40,18 @@ $(document).ready(function() {
     }
     var totalScore = 0;
 
+     
+
     $("#blueGem").on("click", function(){
 
         totalScore = totalScore + num1;{
                 console.log(totalScore);
         }
         
+        
         document.getElementById("scoreDisplay").innerHTML = totalScore;
+        
+       checkWins();
 
     });
 
@@ -55,9 +60,12 @@ $(document).ready(function() {
         totalScore = totalScore + num2;{
             console.log(totalScore);
         }
+        
 
         document.getElementById("scoreDisplay").innerHTML = totalScore;
     
+        checkWins();
+
     });
 
     $("#redGem").on("click", function(){
@@ -65,8 +73,11 @@ $(document).ready(function() {
         totalScore = totalScore + num3;{
             console.log(totalScore);
         }
+        
 
         document.getElementById("scoreDisplay").innerHTML = totalScore;
+
+        checkWins();
 
     });
 
@@ -75,11 +86,52 @@ $(document).ready(function() {
         totalScore = totalScore + num4;{
             console.log(totalScore);
         }
+        
 
         document.getElementById("scoreDisplay").innerHTML = totalScore;
+        
+        checkWins();
 
     });
 
+    function checkWins() {
+
+        if (totalScore === randomNumber){
+            wins++;
+            totalScore= 0;
+            document.getElementById("scoreDisplay").innerHTML = 0;
+            document.getElementById("winsBox").innerHTML = "Wins: " + wins;
+            console.log(totalScore);
+             num1 = Math.floor(Math.random()*12)+1;
+             num2 = Math.floor(Math.random()*12)+1;
+             num3 = Math.floor(Math.random()*12)+1;
+             num4 = Math.floor(Math.random()*12)+1;
+             randomNumber = Math.floor(Math.random()*102)+19;{
+                document.getElementById("score").innerHTML = randomNumber;
+            }
+                console.log(randomNumber);
+        }
+
+        if (totalScore > randomNumber){
+            losses++;
+            totalScore= 0;
+            document.getElementById("scoreDisplay").innerHTML = 0;
+            document.getElementById("lossesBox").innerHTML = "Losses: " + losses;
+            console.log(totalScore);
+             num1 = Math.floor(Math.random()*12)+1;
+             num2 = Math.floor(Math.random()*12)+1;
+             num3 = Math.floor(Math.random()*12)+1;
+             num4 = Math.floor(Math.random()*12)+1;
+             randomNumber = Math.floor(Math.random()*102)+19;{
+                document.getElementById("score").innerHTML = randomNumber;
+            }
+                console.log(randomNumber);
+        }
+        
+    }
+
+    
+   
     
 
 
